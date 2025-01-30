@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتب مكتبتي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book-open logo-icon"></i>
+                <span class="logo-text">مكتبتي</span>
+            </a>
+    
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="ابحث عن كتب، مؤلفين، أو تصنيفات...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+    
+            <ul class="nav-links">
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        الحساب
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-heart"></i>
+                        المفضلة
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        السلة
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="books-section">
+        <div class="section-header">
+            <h2 class="section-title">كتب مميزة</h2>
+            <a href="index.html" class="back-home-btn">
+                <i class="fas fa-arrow-right"></i>
+                العودة للرئيسية
+            </a>
+        </div>
+        <!-- قبل قسم الكتب -->
+         <!-- قبل قسم الكتب -->
+        <div class="books-header">
+            <h2>تصفح مكتبتنا</h2>
+           <div class="sorting-options">
+                 <select id="sortBooks">
+                   <option value="price-asc">السعر: من الأقل للأعلى</option>
+                   <option value="price-desc">السعر: من الأعلى للأقل</option>
+                   <option value="rating">التقييم</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="books-grid" id="booksContainer">
+            <!-- كتاب 1 -->
+            <div class="book-card">
+                <div class="book-badge bestseller">الأكثر مبيعاً</div>
+                <img src="images/alchemist.jpg" alt="الخيميائي" class="book-cover">
+                <h3 class="book-title">الخيميائي</h3>
+                <p class="book-author">باولو كويلو</p>
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(4.8)</span>
+                </div>
+                <p class="book-price">$14.99</p>
+                <div class="book-actions">
+                    <button class="read-btn">معاينة مجانية</button>
+                    <button class="buy-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <!-- كتاب 2 -->
+            <div class="book-card">
+                <div class="book-badge new">إصدار جديد</div>
+                <img src="images/1984.jpg" alt="1984" class="book-cover">
+                <h3 class="book-title">1984</h3>
+                <p class="book-author">جورج أورويل</p>
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(5.0)</span>
+                </div>
+                <p class="book-price">$12.99</p>
+                <div class="book-actions">
+                    <button class="read-btn">معاينة مجانية</button>
+                    <button class="buy-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <!-- كتاب 3 -->
+            <div class="book-card">
+                <img src="images/kafka.jpg" alt="الغريب" class="book-cover">
+                <h3 class="book-title">الغريب</h3>
+                <p class="book-author">ألبير كامو</p>
+                <div class="book-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(4.2)</span>
+                </div>
+                <p class="book-price">$10.99</p>
+                <div class="book-actions">
+                    <button class="read-btn">معاينة مجانية</button>
+                    <button class="buy-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <!-- يمكن إضافة المزيد من الكتب بنفس النمط -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
